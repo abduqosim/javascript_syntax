@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>title</title>
+</head>
+<body>
+
+	<h1 style="text-align: center;margin-top: 250px;font-size: 200px;color: magenta;">JAVA SCRIPT</h1>
+
+	<script>
+
+		var hafta=5;
+		 switch (hafta){
+		 	case 1:console.log("yakshanba");break;
+		 	case 2:console.log("dushanba");break;
+		 	case 3:console.log("seshanba");break;
+		 	case 4:console.log("chorshanba");break;
+		 	case 5:console.log("payshanba");break;
+		 	case 6:console.log("juma");break;
+		 	case 7:console.log("shanba");break;
+		 	default :console.log("Bunaqa ha yuq");break;	
+		 }
+
+		 var a,b=0,c=new Array(1,2,3,4,5,13,13,12,8,10);
+
+		 for(var i=1;i<=c.length();i++){
+		 	b++;
+		 	if(i=13){
+		 		break;
+		 	}
+		 }
+		 console.log(b);
+
+
+
+
+		  var a,b=0,c=[1,2,3,4,5,13,13,12,8,10];
+
+		 for(var s of c){
+		 	b++;
+		 	if(s=13){
+		 		break;
+		 	}
+		 }
+		 console.log(b);
+
+		 var nuqta = {x:0,y:0}
+		 delete nuqta.y;
+		 if(delete nuqta.y){
+
+		 console.log("O'chiriuldi");
+		 }
+
+		 mashina={
+		 	rangi:"oq",
+		 	nomi: "nexia"
+		 };
+
+		 mashina1={
+		 	rangi:"qora",
+		 	nomi: "fg"
+		 };
+
+		 mashina2={
+		 	rangi:"malla",
+		 	nomi: "ftgy"
+		 };
+
+		 mashina3={
+		 	rangi:"yashil",
+		 	nomi: "fgvbh"
+		 };
+		
+
+	
+
+	
+		var a, b, c, d, e, f, g, k;
+		k=1233;
+		a=k/1000;//
+		b=k-a*1000;
+		c=b/100;//
+		d=b-c*100;
+		e=d/10;//
+		f=d-e*10;//
+		console.log("b*c*d*k=",a*c*e*f);
+
+
+
+			
+
+
+	function Kva(x){
+		return x*x;
+	}
+	function gipo(a,b){
+		return Math.sqrt(Kva(a)+Kva(b));
+	}
+	console.log(gipo(3,4));
+
+	
+
+
+		function add2(A){
+			console.log("Salom "+ A);
+		}
+		var d=["Ey","Doni","Qoni","Moni"]
+		for(var i=0;i<=3;i++){
+			add2(d[i]);
+		}
+
+
+
+
+		function add3(){
+			var b=0;
+			for(var qadam of arguments){
+				b+=qadam;
+			}
+				return b;
+		}
+		console.log(add3(5,5,7,8));
+
+
+		function max(){
+			var a=Number.NEGATIVE_INFINITY;
+			for (let qadam of arguments){
+				if(qadam > a)
+					a=qadam;
+			}
+		return a;
+		}
+		var n=max(4,8,7,-9,-7);
+		console.log(n);
+
+
+
+		function ma(a,b){
+			console.log(a,b);
+			console.log(arguments[0],arguments[1]);
+			arguments[1]=1234;
+			console.log(b);
+		}
+		var n=ma(2,2);
+		console.log(n);
+
+		var a,b,c,d;
+		a=prompt("a ni kiriting");
+		b=prompt("b ni kiriting");
+		c=prompt("c ni kiriting");
+
+		if(a>b&&a>c)
+			console.log(a);
+		else if(b>a&&b>c)
+			console.log(b);
+		else console.log(c);
+
+
+
+		var a,b,c,d,x1,x2;
+		a=prompt("a ni kiriting");
+		b=prompt("b ni kiriting");
+		c=prompt("c ni kiriting");
+		d=Math.sqrt(b*b-4*a*c);
+		x1=(-b-Math.sqrt(b*b-4*a*c))/(4*a);
+		x2=(-b+Math.sqrt(b*b-4*a*c))/(4*a);
+		console.log(d);
+		console.log(x1);
+		console.log(x2);
+
+
+
+
+		var a,b,c=0,d,x1,x2,n;
+		n=prompt("n ni kiriting");
+		
+		for(let i=1;i<=n;i++){
+			c+=1/i;
+		}
+	
+		console.log(c);
+
+
+
+		var a,b,c=0;
+		 a=prompt("a ni kiriting");
+		 b=prompt("b ni kiriting");
+		for (let i=a;i<=b;i++){
+			c+=Number(i);
+		}
+		console.log(c);
+
+
+		var a,b,c=0;
+		 a=prompt("a ni kiriting");
+		 b=prompt("b ni kiriting");
+		
+		 if(a>1&&b>0)
+		console.log(a+"x"+"+"+b);
+		else if(a>1&&b<0)
+		console.log(a+"x"+b);
+		else if(a<1&&b>0)
+		console.log("-"+a+"x"+"+"+b);
+		else if(a<1&&b<0)
+		console.log(a+"x"+b);
+	 
+
+
+
+
+		var a,b,c,y=0,x,l,k,h=2;
+		 a=prompt("a ni kiriting");
+		 b=prompt("b ni kiriting");
+		 c=prompt("c ni kiriting");
+		for (let i=a;i<=c;i+=h){
+		 l=Math.pow(((a*i+b)/(b*b+Math.pow(Math.cos(i),2))),1/3);
+		 k=((Math.sin(Math.pow(i,2)))/(a*b));
+		 y=l-k;
+		}
+		console.log(y);
+
+
+		
+		var a,b,c;
+		a=prompt("a=");
+		b=prompt("b=");
+		c=Number(a)+Number(b);
+		alert(c);
+
+		
+
+
+
+		an = a1 + (n-1) * d;
+		console.log(an);
+		for(var k=1 ; k<=n ; k++){
+			an1+=(a1+an)/2;
+		}
+		console.log(an1);
+		while(n>=1){
+		console.log(n);
+			n-=2;
+		}
+
+
+		var a=new Array(),b,c,n;
+		n=prompt("n=");
+		for(let i=0;i<n;i++){
+			a[i]=prompt();
+		}
+		for(let j=0;j<n;j++){
+			console.log(a[j]);
+		}
+
+
+		function a(s=new Array()){
+			this.faktarial=s;
+		}
+
+		a.prototype={
+			kerak: function(){return 			
+		}
+
+		var son=new a(s=new Array()=prompt("son kiriting"));
+		console.log(son.kerak());
+
+
+
+			function moshina (s,t,nomi){
+			this.masofa=s;
+			this.vaqt=t;
+			this.nomi=nomi;
+		}
+
+		moshina.prototype={
+			tezlik: function(){return this.masofa/this.vaqt;},
+			nomi: String,			
+		}
+		
+		var nexia=new moshina(100,2,"nexia");
+		var damas=new moshina(80,2,"damas");
+		console.log(nexia.tezlik(),nexia,damas.tezlik(),damas.nomi);
+		console.log(moshina.prototype);
+		moshina.prototype.rul=1;
+		console.log(moshina.prototype);
+
+
+
+
+		function son(a,b){this.son1=a;this.son2=b};
+		son.prototype.qush:function(){return a+b};
+		son.prototype.ayir:function(){return a-b};
+		son.prototype.kupaytir:function(){return a*b};
+		son.prototype.bul:function(){return a/b};
+		
+		console.log(son.qush(),son.ayir(),son.kupaytir(),son.bul());
+
+
+
+
+
+		 var str="Tatu samarqand %%%+++%&&&&**** filiali 234";
+		 var pattern=/samarqand/;
+		 pattern.test(str);
+		 str.search(pattern);
+		 var patt=new RegExp("samarqand");
+		 var str.test(/\+\d\d\d\(\d\d\*\)\d\d\d\*\-\d\d\-\d\d/g,"");
+		 console.log(str);
+
+
+
+		 var a="+998(99)999-99-99";
+		 var b=/\+\d{3}\(\d{2}\)\d{3}\-\d{2}\-\d{2}/;
+		 console.log(b.test(a));
+		 var a=new Array().prompt("a=");
+		 var b=/[A-Z]*/;
+
+
+		 var a=prompt();
+		 var d=0,p=0,z=new Array();
+		 a=a.split(' ');
+		 for(let qadam of a)
+		 z.push(qadam.reverse());
+		 for(let qadam of z){
+		 	if(qadam[0]=='A' && qadam[1]=='N'){
+		 console.log(qadam.split());
+		 	}
+		 }
+
+
+		var a=readline();
+		var d=0,p=0;
+		a=a.split(' ');
+		for(var q = 0; q < a.length;q++){
+			if(a[q][0]=='A'){
+				print(a[q]);
+			}
+		}
+
+
+
+		 var str=prompt();
+		 var pattern=/([Ii]([Nn]([Ff]([Oo]))))/;
+		 var q = pattern.test(str);
+		 if(q)
+		 console.log(1);
+		else
+		 console.log(0);	
+		 
+		 
+
+
+
+	</script>
+
+</body>
+</html>
